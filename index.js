@@ -21,13 +21,13 @@ async function showFeed() {
     feedElement.innerHTML = `
     <div class="img-album">
       <img
-      src=${feed.thumbnailUrl}
+      src=${feed.nodes.node.path}
       alt=""
       />
     </div>
     <div class="album-info">
       <p class="album-body">
-      ${feed.title}
+      ${feed.nodes.node.title}
       </p>
     </div>`;
     mainWrapper.appendChild(feedElement);
